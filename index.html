@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/Muñeco.png" />
+  <meta name="theme-color" content="#0A3871">
+</head>
+
+<body>
+  <section class="container">
+    <div class="logo">
+      <a href="#" class="logo__cta">
+        <img src="img/Logo.png" alt="" class="logo">
+      </a>
+    </div>
+    <div class="rectangulo">
+      <div class="result">
+        <figure>
+          <img src="img/Muñeco.png" alt="">
+        </figure>
+        <h3 class="resultTitle">
+          Ningún mensaje fue encontrado
+        </h3>
+        <textarea id="textoResultado" name="textarea" rows="10" cols="40"
+          onchange="this.value=this.value.toLowerCase();"
+          placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+        <div id="divInvisible" class="invisible">
+          <button id="btnCopiar" class="btn desencriptar">Copiar</button>
+        </div>
+      </div>
+    </div>
+    <div class="izquierda">
+
+      <div class="divtextoAEncriptar">
+        <input id="textoAEncriptar" type="text" placeholder="Ingrese el texto aqui">
+      </div>
+
+      <section class="sectionEncriptar">
+        <div class="alert">
+          <img src="img/alert.png" alt="">
+          <p class="alertParagraph">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+          <button id="btnEncriptar" class="btn encriptar">Encriptar</button>
+          <button id="btnDesencriptar" class="btn desencriptar">Desencriptar</button>
+        </div>
+      </section>
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+
+</body>
+
+</html>
